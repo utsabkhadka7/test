@@ -1,19 +1,126 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <title>My Test Website</title>
+    <title>My Portfolio</title>
 </head>
 
 <body>
-    <h1>Hello, GitHub!</h1>
-    <p>This is my test website.</p>
 
-    <button onclick="changeText()">Click Me</button>
+    <header>
+        <img src="images/Logo.jpg" alt="My Portfolio Logo" width="80">
 
-    <script>
-        function changeText() {
-            document.querySelector("p").textContent = "It works!";
-        }
-    </script>
+        <h1>My Portfolio</h1>
+
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">My Skills</a></li>
+                <li><a href="#projects">My Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="about">
+            <h2>About Me</h2>
+
+            <img src="images/Profile.jpeg" alt="Profile picture of me" width="150">
+
+            <p>
+                Hello! My name is Utsav. I am a BIT student interested in
+                software development, web development, and UI/UX design.
+                I enjoy learning new technologies and creating useful
+                digital projects.
+            </p>
+        </section>
+
+
+        <section id="skills">
+            <h2>My Skills</h2>
+
+            <dl>
+                <dt>HTML</dt>
+                <dd>Creating structured and semantic web pages.</dd>
+
+                <dt>CSS</dt>
+                <dd>Designing and styling web pages.</dd>
+
+                <dt>JavaScript</dt>
+                <dd>Adding interaction and functionality to websites.</dd>
+
+                <dt>Figma</dt>
+                <dd>Designing user interfaces and prototypes.</dd>
+            </dl>
+        </section>
+
+
+        <section id="projects">
+            <h2>My Projects</h2>
+
+            <article>
+                <h3>Food Delivery App</h3>
+
+                <p>
+                    A food delivery application designed using Figma.
+                    The project focuses on creating a simple and
+                    user-friendly mobile interface.
+                </p>
+
+                <a href="https://github.com/utsabkhadka7/food-delivery-app">
+                    View Repository
+                </a>
+            </article>
+
+            <article>
+                <h3>Personal Portfolio</h3>
+
+                <p>
+                    A personal portfolio website containing information
+                    about my skills, projects, and contact details.
+                </p>
+
+                <a href="https://github.com/utsabkhadka7/my-portfolio">
+                    View Repository
+                </a>
+            </article>
+        </section>
+
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+
+            <form>
+
+                <p>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name">
+                </p>
+
+                <p>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                </p>
+
+                <p>
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" rows="5" cols="30"></textarea>
+                </p>
+
+                <button type="submit">Submit</button>
+
+            </form>
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>Copyright © 2026. All Rights Reserved.</p>
+    </footer>
+
 </body>
+
 </html>
