@@ -1,126 +1,182 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <title>My Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utsab Khadka - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+    <!-- Header: logo on the left, navigation in the center -->
     <header>
-        <img src="images/Logo.jpg" alt="My Portfolio Logo" width="80">
+        <div class="header-box">
+            <div class="logo">
+                <img src="images/Logo.jpg" alt="Utsab Khadka Logo" width="70">
+            </div>
 
-        <h1>My Portfolio</h1>
-
-        <nav>
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#skills">My Skills</a></li>
-                <li><a href="#projects">My Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+            <!-- Navigation -->
+            <nav>
+                <div class="nav-box">
+                    <ul>
+                        <li><a href="#about">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#education">Education</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
     </header>
 
     <main>
 
+        <!-- About Me -->
         <section id="about">
-            <h2>About Me</h2>
+            <div class="card about-box">
 
-            <img src="images/Profile.jpeg" alt="Profile picture of me" width="150">
+                <div class="about-content">
+                    <div class="about-text">
+                        <h2>About Me</h2>
 
-            <p>
-                Hello! My name is Utsav. I am a BIT student interested in
-                software development, web development, and UI/UX design.
-                I enjoy learning new technologies and creating useful
-                digital projects.
-            </p>
+                        <p>
+                            Hello! My name is Utsab. I am a BIT student interested in software development, web development, and UI/UX design. I enjoy learning new technologies and creating useful digital projects.
+                        </p>
+
+                        <p>
+                            I am continuously improving my programming, design, and problem-solving skills by working on different projects.
+                        </p>
+                    </div>
+
+                    <div class="about-image">
+                        <img src="images/Profile.png"
+                             alt="Utsab Khadka"
+                             width="300">
+                    </div>
+                </div>
+
+            </div>
         </section>
 
-
-        <section id="skills">
-            <h2>My Skills</h2>
-
-            <dl>
-                <dt>HTML</dt>
-                <dd>Creating structured and semantic web pages.</dd>
-
-                <dt>CSS</dt>
-                <dd>Designing and styling web pages.</dd>
-
-                <dt>JavaScript</dt>
-                <dd>Adding interaction and functionality to websites.</dd>
-
-                <dt>Figma</dt>
-                <dd>Designing user interfaces and prototypes.</dd>
-            </dl>
-        </section>
-
-
+        <!-- Projects -->
         <section id="projects">
-            <h2>My Projects</h2>
+            <div class="card">
+                <div class="section-title">
+                    <h2>My Projects</h2>
+                </div>
 
-            <article>
-                <h3>Food Delivery App</h3>
+                <div class="project-box">
+                    <div class="project">
+                        <h3>Food Delivery App</h3>
+                        <p>
+                            A food delivery application designed using Figma. The project focuses on creating a simple and user-friendly mobile interface.
+                        </p>
+                    </div>
 
-                <p>
-                    A food delivery application designed using Figma.
-                    The project focuses on creating a simple and
-                    user-friendly mobile interface.
-                </p>
+                    <div class="project">
+                        <h3>Web Development Projects</h3>
+                        <p>
+                            Different web projects created for learning
+                            and practical experience.
+                        </p>
+                    </div>
 
-                <a href="https://github.com/utsabkhadka7/food-delivery-app">
-                    View Repository
-                </a>
-            </article>
-
-            <article>
-                <h3>Personal Portfolio</h3>
-
-                <p>
-                    A personal portfolio website containing information
-                    about my skills, projects, and contact details.
-                </p>
-
-                <a href="https://github.com/utsabkhadka7/my-portfolio">
-                    View Repository
-                </a>
-            </article>
+                    <div class="project">
+                        <h3>Data Structure Projects</h3>
+                        <p>
+                            Programming projects focused on data structures
+                            and algorithms.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </section>
 
+        <!-- Skills -->
+        <section id="skills">
+            <div class="card">
+                <h2>My Skills</h2>
 
+                <div class="skills-box">
+                    <div class="skill">
+                        <strong>HTML5</strong>
+                        <p>Creating structured and semantic web pages.</p>
+                    </div>
+
+                    <div class="skill">
+                        <strong>CSS</strong>
+                        <p>Designing and styling web pages.</p>
+                    </div>
+
+                    <div class="skill">
+                        <strong>JavaScript</strong>
+                        <p>Creating interactive web experiences.</p>
+                    </div>
+
+                    <div class="skill">
+                        <strong>Figma</strong>
+                        <p>Designing user interfaces and creating design prototypes.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education -->
+        <section id="education">
+            <div class="card">
+                <h2>Education</h2>
+
+                <div class="education-box">
+                    <h3>Bachelor of Information Technology</h3>
+                    <p>
+                        Currently studying information technology with a
+                        focus on programming, web development and software engineering and UI/UX design.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
         <section id="contact">
-            <h2>Contact Me</h2>
+            <div class="card">
+                <h2>Contact Me</h2>
 
-            <form>
+                <div class="contact-box">
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name">
+                        </div>
 
-                <p>
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name">
-                </p>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email">
+                        </div>
 
-                <p>
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email">
-                </p>
+                        <div class="form-group">
+                            <label for="message">Message:</label>
+                            <textarea id="message"
+                                      name="message"
+                                      rows="6"></textarea>
+                        </div>
 
-                <p>
-                    <label for="message">Message:</label><br>
-                    <textarea id="message" name="message" rows="5" cols="30"></textarea>
-                </p>
-
-                <button type="submit">Submit</button>
-
-            </form>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
         </section>
 
     </main>
 
-
+    <!-- Footer -->
     <footer>
-        <p>Copyright © 2026. All Rights Reserved.</p>
+        <div class="footer-box">
+            <p>© 2026 Utsab Khadka. All rights reserved.</p>
+        </div>
     </footer>
 
 </body>
-
 </html>
