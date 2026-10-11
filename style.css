@@ -211,6 +211,90 @@ button:hover {
     color: white;
 }
 
+/* ---------- Image Slider  ---------- */
+.slider {
+    position: relative;
+    width: 100%;
+    max-width: 700px;
+    margin: 20px auto 0;
+}
+
+.slider-viewport {
+    overflow: hidden;
+    border-radius: 12px;
+    aspect-ratio: 16 / 8;
+    box-shadow: 8px 8px 0 #f08a4b;
+}
+
+.slider-track {
+    display: flex;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+    will-change: transform;
+}
+
+.slide {
+    flex: 0 0 100%;
+    height: 100%;
+}
+
+.slide img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Arrows */
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    border-radius: 50%;
+    background: rgba(31, 42, 68, 0.75);
+    color: white;
+    font-size: 18px;
+    z-index: 2;
+}
+
+.slider-btn:hover {
+    background: #f08a4b;
+    color: #1f2a44;
+}
+
+.slider-btn.prev { left: 12px; }
+.slider-btn.next { right: 12px; }
+
+/* Dots */
+.slider-dots {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 16px;
+}
+
+.slider-dots button {
+    width: 12px;
+    height: 12px;
+    padding: 0;
+    border-radius: 50%;
+    background: #c9c2b6;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.slider-dots button:hover {
+    background: #1f2a44;
+}
+
+.slider-dots button.active {
+    background: #f08a4b;
+    transform: scale(1.3);
+}
+
 /* ---------- Footer ---------- */
 footer {
     background: #1f2a44;
@@ -254,5 +338,12 @@ footer {
 
      .card {
         padding: 18px;
+    }
+
+    /* Smaller slider arrows on phones */
+    .slider-btn {
+        width: 36px;
+        height: 36px;
+        font-size: 14px;
     }
 }
